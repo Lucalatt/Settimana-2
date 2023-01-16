@@ -1,0 +1,16 @@
+package esercizio1;
+
+import java.util.Arrays;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		int x = (int) (Math.random()*10);
+		
+		int[] random = {x, x, x, x, x}; 
+		// TODO Auto-generated method stub
+		System.out.print(Arrays.toString(random));
+	}
+
+}

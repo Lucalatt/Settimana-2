@@ -1,0 +1,24 @@
+package esercizio2;
+
+import java.util.Scanner;
+
+public class calcolo {
+	double km;
+	double lt;
+
+	Scanner scan = new Scanner(System.in);
+
+	public void calcola() throws ZeroError {
+
+		System.out.println("INSERIRE I KM PERCORSI: ");
+		km = scan.nextDouble();
+
+		System.out.println("INSERIRE I LITRI CONSUMATI: ");
+		lt = scan.nextDouble();
+		scan.close();
+
+		double cons = km / lt;
+		System.out.println("IL CONSUMO DELLA TUA AUTO E': " + cons + " km/lt");
+
+	}
+}

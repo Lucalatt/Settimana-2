@@ -1,0 +1,32 @@
+package esercizio2;
+
+import java.util.Scanner;
+
+public class esercizio2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		double km;
+		double lt;
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("INSERIRE I KM PERCORSI: ");
+		km = scan.nextDouble();
+		
+		
+		System.out.println("INSERIRE I LITRI CONSUMATI: ");
+		lt = scan.nextDouble();
+		scan.close();
+		
+		double cons = km / lt;
+		System.out.println("IL CONSUMO DELLA TUA AUTO E': " + cons + " lt/km");
+		
+		
+		
+		
+
+	}
+
+}
