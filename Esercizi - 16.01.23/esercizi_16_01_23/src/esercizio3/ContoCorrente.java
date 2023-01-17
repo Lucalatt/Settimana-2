@@ -15,9 +15,12 @@ public class ContoCorrente {
 	void preleva(double x) {
 		if (nMovimenti < maxMovimenti)
 			saldo = saldo - x;
-		else
+			if (saldo < 0 ) {
+				throw new Exception ("disponibilità esaurita");
+			}
+		else {
 			saldo = saldo - x - 0.50;
-		nMovimenti++;
+		nMovimenti++;}
 	}
 
 	double restituisciSaldo() {

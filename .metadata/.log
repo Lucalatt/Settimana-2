@@ -1,20 +1,20 @@
-!SESSION 2023-01-16 15:58:38.640 -----------------------------------------------
+!SESSION 2023-01-16 16:03:53.988 -----------------------------------------------
 eclipse.buildId=4.26.0.20221201-1200
 java.version=17.0.5
 java.vendor=Eclipse Adoptium
 BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=it_IT
-Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data C:\Users\lucal\Documents\GitHub\Back End\Settimana 2 -product org.eclipse.epp.package.jee.product
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -data C:\Users\lucal\Documents\GitHub\Back End\Settimana 2\Esercizi - 16.01.23 -product org.eclipse.epp.package.jee.product
 
-!ENTRY ch.qos.logback.classic 1 0 2023-01-16 15:58:39.807
+!ENTRY ch.qos.logback.classic 1 0 2023-01-16 16:03:55.253
 !MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
 
-!ENTRY ch.qos.logback.classic 1 0 2023-01-16 15:58:40.993
-!MESSAGE Logback config file: C:\Users\lucal\Documents\GitHub\Back End\Settimana 2\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.1.0.20221015-0744.xml
+!ENTRY ch.qos.logback.classic 1 0 2023-01-16 16:03:56.328
+!MESSAGE Logback config file: C:\Users\lucal\Documents\GitHub\Back End\Settimana 2\Esercizi - 16.01.23\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.1.0.20221015-0744.xml
 
-!ENTRY org.eclipse.jface 2 0 2023-01-16 15:58:43.443
+!ENTRY org.eclipse.jface 2 0 2023-01-16 16:03:58.751
 !MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
-!SUBENTRY 1 org.eclipse.jface 2 0 2023-01-16 15:58:43.443
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-01-16 16:03:58.751
 !MESSAGE A conflict occurred for CTRL+SHIFT+T:
 Binding(CTRL+SHIFT+T,
 	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
@@ -32,7 +32,7 @@ Binding(CTRL+SHIFT+T,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
-!SUBENTRY 1 org.eclipse.jface 2 0 2023-01-16 15:58:43.443
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-01-16 16:03:58.751
 !MESSAGE A conflict occurred for ALT+SHIFT+R:
 Binding(ALT+SHIFT+R,
 	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
@@ -51,9 +51,26 @@ Binding(ALT+SHIFT+R,
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
 
-!ENTRY org.eclipse.egit.ui 2 0 2023-01-16 15:58:47.475
+!ENTRY org.eclipse.egit.ui 2 0 2023-01-16 16:04:02.259
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\lucal'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.core 4 0 2023-01-16 19:34:11.565
+!MESSAGE An exception occurred during push on URI https://github.com/Lucalatt/Settimana-2.git: https://github.com/Lucalatt/Settimana-2.git: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/Lucalatt/Settimana-2.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:685)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:627)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:541)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:138)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1537)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:269)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.egit.ui 4 0 2023-01-16 19:34:11.567
+!MESSAGE Can't connect to any repository: https://github.com/Lucalatt/Settimana-2.git (https://github.com/Lucalatt/Settimana-2.git: not authorized)
