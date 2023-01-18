@@ -14,10 +14,12 @@ public class Esercizio2 {
         System.out.println("Lista originale: " + list);
 
         List<Integer> newList = duplicateAndReverseList(list);
-        System.out.println("Nuova lista: " + newList);
+        System.out.println("Lista originale: " + list + " Nuova lista: " + newList);
 
-        boolean isEven = true;
+        boolean isEven = false;
         printListByIndex(newList, isEven);
+        printListByIndex(newList, !isEven);
+       
 
 	}
 	
@@ -48,11 +50,14 @@ public class Esercizio2 {
         for (int i = 0; i < list.size(); i++) {
             if (isEven && i % 2 == 0) {
                 System.out.print(list.get(i) + " ");
+                
             } else if (!isEven && i % 2 != 0) {
                 System.out.print(list.get(i) + " ");
+               
             }
+            
         }
-
+        System.out.println();
 	}
 
 }

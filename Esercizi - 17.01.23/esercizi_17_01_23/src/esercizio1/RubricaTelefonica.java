@@ -65,9 +65,7 @@ public class RubricaTelefonica {
 		} else {
 			System.out.println("Contatto non trovato!");
 		}
-
 		rubrica();
-
 	}
 
 	public void ricercaUtenteTelefono() {
@@ -76,13 +74,12 @@ public class RubricaTelefonica {
 		for (Map.Entry<String, String> entry : contatti.entrySet()) {
 			if (entry.getValue().equals(numTel)) {
 				System.out.println("Nome: " + entry.getKey());
+				System.out.println("-----------");
 			} else {
 				System.out.println("Contatto non trovato!");
-			}
-
+			} 
 			rubrica();
 		}
-
 	}
 
 	public void ricercaUtenteNome() {
@@ -93,11 +90,9 @@ public class RubricaTelefonica {
 				System.out.println("Numero: " + entry.getValue());
 			} else {
 				System.out.println("Contatto non trovato!");
-			}
-			
+			}		
 			rubrica();
 		}
-
 	}
 
 	public void stampaContatti() {
@@ -108,9 +103,7 @@ public class RubricaTelefonica {
 		} else {
 			System.out.println("LA LISTA E' VUOTA!");
 		}
-
 		rubrica();
-
 	}
 
 }
