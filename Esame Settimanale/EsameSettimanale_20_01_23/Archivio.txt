@@ -1,0 +1,2 @@
+Rivista - Codice ISBN: 9319775870984, Titolo: sssss, Anno: 555, Pagine: 55, PeriodicitÃ : SETTIMANALE
+Libro - Codice ISBN: 9000244582044, Titolo: fdfdf, Anno: 546546, Pagine: 5465, Autore: fdfs, Genere: fdsf
